@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html body button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 2em;
+  cursor: pointer;
+}
+html body li {
+  list-style-type: none;
+}
+html body h1, html body h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+html body img {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vw;
+  margin: O;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+header nav, header p {
+  display: none;
+}
+
+main article {
+  position: relative;
+}
+main article p {
+  margin: 2% 15%;
+}
+main article button {
+  position: relative;
+  left: 85%;
+  top: -14rem;
+  border-radius: 200px;
+  transition: 1s ease-in-out;
+}
+main article button:hover {
+  transform: scale(1.5);
+  transition: 1s ease-in-out;
+}/*# sourceMappingURL=index.css.map */
