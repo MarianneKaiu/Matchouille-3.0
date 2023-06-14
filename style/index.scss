@@ -1,5 +1,8 @@
 // GENERALITIES
 $general-white: rgb(255, 255, 255);
+$general-grey: #D9D9D9;
+$grey2: #818181;
+$general-dark: rgb(0, 0, 5);
 html {
     font-size: 62.5%;
 
@@ -14,9 +17,9 @@ html {
         padding: 0;
         button {
             border: none;
-            background-color: $general-white;
             font-size: 2em;
             cursor: pointer;
+            background-color: $general-grey;
         }
         li {
             list-style-type: none;
@@ -26,9 +29,8 @@ html {
             text-align: center;
         }
         img {
-            background-color: aliceblue;
             width: 100%;
-            height: 100vw;
+            aspect-ratio: 1 / 1;
             margin: O;
         }
 
@@ -38,13 +40,20 @@ html {
 header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    background-color: $general-grey;
+    padding: 5% 2%;
+    .title {
+        background-color: $grey2;
+        padding: 0.5%;
+        border-radius: 15px;
+    }
 
     nav, p {
         display: none;
     }
 }
 main {
-    article {
+    .card {
         position: relative;
         p {
         margin: 2% 15%;
@@ -53,11 +62,97 @@ main {
             position: relative;
             left: 85%;
             top: -14rem;
-            border-radius: 200px;
+            border-radius: 20px;
             transition: 1s ease-in-out;
             &:hover {
                 transform: scale(1.5);
                 transition: 1s ease-in-out;
             }
         }
+    }}
+#more.hidden {
+    display: none;
+}
+    @media screen and (min-width: 550px) {
+        header {
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+            p {
+            display: inline;   
+        }
+        }
+        main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10%;
+        .card {
+            position: relative;
+            width: 40%;
+            border: 1px solid $grey2;
+            border-radius: 10px;
+            margin-top: 3%;
+            box-shadow: 3px 3px 5px $grey2;
+            font-size: 1rem;
+        
+            h2 {
+                background-color: $general-grey;
+                margin: 2%;
+                padding: 5%;
+                border-radius: 0.5em;
+            }
+            button {
+                position: relative;
+                background-color: transparent;
+                top: 0;
+                left: 0;
+            }
+            
+        }
+        
+        
+    }
+    @media screen and (min-width: 750px) {
+        main {
+            section {
+
+            .card {
+            width: 30%;
+
+            p {
+                font-size: 1.65rem;
+                margin: 2% 14%;
+            }
+        }
+    }
 }}
+@media screen and (min-width: 1000px) {
+    main {
+        section {
+
+        .card {
+        width: 20%;
+
+        p {
+            font-size: 1.7rem;
+            margin: 2% 13%;
+        }
+    }
+}
+}}
+@media screen and (min-width: 1400px) {
+    main {
+        section {
+
+        .card {
+        width: 15%;
+        margin-left: 2%;
+        margin-right: 2%;
+        p {
+            margin: 2% 13%;
+        }
+    }
+}
+}}}

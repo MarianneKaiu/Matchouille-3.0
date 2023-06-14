@@ -10,9 +10,9 @@ html body {
 }
 html body button {
   border: none;
-  background-color: rgb(255, 255, 255);
   font-size: 2em;
   cursor: pointer;
+  background-color: #D9D9D9;
 }
 html body li {
   list-style-type: none;
@@ -22,34 +22,109 @@ html body h1, html body h2 {
   text-align: center;
 }
 html body img {
-  background-color: aliceblue;
   width: 100%;
-  height: 100vw;
+  aspect-ratio: 1/1;
   margin: O;
 }
 
 header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  background-color: #D9D9D9;
+  padding: 5% 2%;
+}
+header .title {
+  background-color: #818181;
+  padding: 0.5%;
+  border-radius: 15px;
 }
 header nav, header p {
   display: none;
 }
 
-main article {
+main .card {
   position: relative;
 }
-main article p {
+main .card p {
   margin: 2% 15%;
 }
-main article button {
+main .card button {
   position: relative;
   left: 85%;
   top: -14rem;
-  border-radius: 200px;
+  border-radius: 20px;
   transition: 1s ease-in-out;
 }
-main article button:hover {
+main .card button:hover {
   transform: scale(1.5);
   transition: 1s ease-in-out;
+}
+
+#more.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  header div {
+    display: flex;
+    flex-direction: column;
+  }
+  header p {
+    display: inline;
+  }
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10%;
+  }
+  main section .card {
+    position: relative;
+    width: 40%;
+    border: 1px solid #818181;
+    border-radius: 10px;
+    margin-top: 3%;
+    box-shadow: 3px 3px 5px #818181;
+    font-size: 1rem;
+  }
+  main section .card h2 {
+    background-color: #D9D9D9;
+    margin: 2%;
+    padding: 5%;
+    border-radius: 0.5em;
+  }
+  main section .card button {
+    position: relative;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 550px) and (min-width: 750px) {
+  main section .card {
+    width: 30%;
+  }
+  main section .card p {
+    font-size: 1.65rem;
+    margin: 2% 14%;
+  }
+}
+@media screen and (min-width: 550px) and (min-width: 1000px) {
+  main section .card {
+    width: 20%;
+  }
+  main section .card p {
+    font-size: 1.7rem;
+    margin: 2% 13%;
+  }
+}
+@media screen and (min-width: 550px) and (min-width: 1400px) {
+  main section .card {
+    width: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  main section .card p {
+    margin: 2% 13%;
+  }
 }/*# sourceMappingURL=index.css.map */
