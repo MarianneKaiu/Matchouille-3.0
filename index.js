@@ -5,7 +5,7 @@ let cardId;
 
 glass.addEventListener("click", () => {
     alert(
-        "Je suis désolée, ce bouton n'est pas encore fonctionnel, veuillez retourner sur la page d'accueil"
+        "Je suis désolé, ce bouton n'est pas encore fonctionnel, veuillez retourner sur la page d'accueil"
     );
 });
 

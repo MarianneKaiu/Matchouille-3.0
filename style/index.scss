@@ -33,6 +33,48 @@ html {
             aspect-ratio: 1 / 1;
             margin: O;
         }
+        aside {
+                width: 100%;
+
+            table {
+                border: 1px solid $grey2;
+                width: 60%;
+                margin: auto;
+
+                tbody {
+                    width: 100%;
+                    
+                    td {
+                        padding: 0.6em;
+                        border: 1px dotted $general-grey;
+                }}
+                
+            }
+        }
+        form {
+            background-color: $grey2;
+            margin: 2em 0;
+            padding: 1em 2em;
+            display: flex;
+            flex-direction: column;
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin: 0.5em;
+
+                input, select,  button, option {
+                    width: 60%;
+                    padding: 0.5em;
+                    border: 1px solid $general-grey;
+            }   label {
+                width: 30%;
+            }   button {
+                font-size: 1em;
+                width: 40%;
+                align-items: end;
+            }
+            }
+            
 
     }
 }
@@ -156,3 +198,4 @@ main {
     }
 }
 }}}
+}

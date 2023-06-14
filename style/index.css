@@ -26,59 +26,95 @@ html body img {
   aspect-ratio: 1/1;
   margin: O;
 }
-
-header {
+html body aside {
+  width: 100%;
+}
+html body aside table {
+  border: 1px solid #818181;
+  width: 60%;
+  margin: auto;
+}
+html body aside table tbody {
+  width: 100%;
+}
+html body aside table tbody td {
+  padding: 0.6em;
+  border: 1px dotted #D9D9D9;
+}
+html body form {
+  background-color: #818181;
+  margin: 2em 0;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+}
+html body form div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+html body form div input, html body form div select, html body form div button, html body form div option {
+  width: 60%;
+  padding: 0.5em;
+  border: 1px solid #D9D9D9;
+}
+html body form div label {
+  width: 30%;
+}
+html body form div button {
+  font-size: 1em;
+  width: 40%;
+  align-items: end;
+}
+html header {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   background-color: #D9D9D9;
   padding: 5% 2%;
 }
-header .title {
+html header .title {
   background-color: #818181;
   padding: 0.5%;
   border-radius: 15px;
 }
-header nav, header p {
+html header nav, html header p {
   display: none;
 }
-
-main .card {
+html main .card {
   position: relative;
 }
-main .card p {
+html main .card p {
   margin: 2% 15%;
 }
-main .card button {
+html main .card button {
   position: relative;
   left: 85%;
   top: -14rem;
   border-radius: 20px;
   transition: 1s ease-in-out;
 }
-main .card button:hover {
+html main .card button:hover {
   transform: scale(1.5);
   transition: 1s ease-in-out;
 }
-
-#more.hidden {
+html #more.hidden {
   display: none;
 }
-
 @media screen and (min-width: 550px) {
-  header div {
+  html header div {
     display: flex;
     flex-direction: column;
   }
-  header p {
+  html header p {
     display: inline;
   }
-  main section {
+  html main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 10%;
   }
-  main section .card {
+  html main section .card {
     position: relative;
     width: 40%;
     border: 1px solid #818181;
@@ -87,13 +123,13 @@ main .card button:hover {
     box-shadow: 3px 3px 5px #818181;
     font-size: 1rem;
   }
-  main section .card h2 {
+  html main section .card h2 {
     background-color: #D9D9D9;
     margin: 2%;
     padding: 5%;
     border-radius: 0.5em;
   }
-  main section .card button {
+  html main section .card button {
     position: relative;
     background-color: transparent;
     top: 0;
@@ -101,30 +137,30 @@ main .card button:hover {
   }
 }
 @media screen and (min-width: 550px) and (min-width: 750px) {
-  main section .card {
+  html main section .card {
     width: 30%;
   }
-  main section .card p {
+  html main section .card p {
     font-size: 1.65rem;
     margin: 2% 14%;
   }
 }
 @media screen and (min-width: 550px) and (min-width: 1000px) {
-  main section .card {
+  html main section .card {
     width: 20%;
   }
-  main section .card p {
+  html main section .card p {
     font-size: 1.7rem;
     margin: 2% 13%;
   }
 }
 @media screen and (min-width: 550px) and (min-width: 1400px) {
-  main section .card {
+  html main section .card {
     width: 15%;
     margin-left: 2%;
     margin-right: 2%;
   }
-  main section .card p {
+  html main section .card p {
     margin: 2% 13%;
   }
 }/*# sourceMappingURL=index.css.map */
