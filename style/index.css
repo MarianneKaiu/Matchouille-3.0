@@ -97,8 +97,13 @@ html main .card button:hover {
   transform: scale(1.5);
   transition: 1s ease-in-out;
 }
-html #more.hidden {
-  display: none;
+html #more.visible {
+  position: fixed;
+  top: 0;
+  left: 15%;
+  background-color: rgba(129, 129, 129, 0.8039215686);
+  padding: 20% 2%;
+  transition: 2s ease;
 }
 @media screen and (min-width: 550px) {
   html header div {
@@ -135,8 +140,20 @@ html #more.hidden {
     top: 0;
     left: 0;
   }
+  html #more.visible {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5%;
+  }
+  html #more.visible form {
+    width: 70%;
+  }
+  html #more.visible table {
+    margin-top: 20%;
+    background-color: #818181;
+  }
 }
-@media screen and (min-width: 550px) and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   html main section .card {
     width: 30%;
   }
@@ -145,7 +162,7 @@ html #more.hidden {
     margin: 2% 14%;
   }
 }
-@media screen and (min-width: 550px) and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   html main section .card {
     width: 20%;
   }
@@ -154,7 +171,7 @@ html #more.hidden {
     margin: 2% 13%;
   }
 }
-@media screen and (min-width: 550px) and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   html main section .card {
     width: 15%;
     margin-left: 2%;

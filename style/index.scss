@@ -113,8 +113,13 @@ main {
             }
         }
     }}
-#more.hidden {
-    display: none;
+#more.visible {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    background-color: #818181cd;
+    padding: 20% 2%;
+    transition: 2s ease;
 }
     @media screen and (min-width: 550px) {
         header {
@@ -157,6 +162,19 @@ main {
         
         
     }
+    #more.visible {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 5%;
+        form {
+            width: 70%;
+        }
+        table {
+            margin-top: 20%;
+            background-color: #818181;
+        }
+    }
+}
     @media screen and (min-width: 750px) {
         main {
             section {
@@ -199,4 +217,3 @@ main {
     }
 }
 }}}
-}

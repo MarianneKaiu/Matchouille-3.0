@@ -1,7 +1,6 @@
 const glass = document.querySelector(".fa-magnifying-glass");
 const dots = document.querySelectorAll(".more-btn");
 const more = document.querySelector("#more");
-let cardId;
 
 glass.addEventListener("click", () => {
     alert(
@@ -10,7 +9,7 @@ glass.addEventListener("click", () => {
 });
 
 dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-        more.classList.toggle("hidden");
+    dot.addEventListener("click", (e) => {
+        more.classList.toggle("visible");
     });
 });
